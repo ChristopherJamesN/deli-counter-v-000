@@ -20,3 +20,13 @@ def take_a_number(deli, name)
   puts "Welcome, #{name}. You are number #{deli.length} in line."
   return deli
 end
+
+def now_serving(deli)
+  if deli == []
+    puts "There is nobody in line"
+  else
+    puts "Now serving #{deli[0]}."
+    deli.shift
+  end
+  return deli
+end
