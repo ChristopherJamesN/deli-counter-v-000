@@ -10,5 +10,7 @@ def line(deli)
   else
     deli.each_with_index do |name, index|
       line_description >> " #{index}. #{name}"
+    end
+    puts line_description
   end
 end
