@@ -2,11 +2,13 @@
 katz_deli = []
 
 def line(deli)
+  line_description = "The line is currently:"
   if deli==[]
     puts "The line is currently empty."
+  elsif deli.length == 1
+    puts "The line is currently: #{1}. #{deli[0]}"
   else
-    puts "The line is currently: 1. #{deli[1]} 2. #{deli[2]} 3. #{deli[3]}"
+    deli.each_with_index do |name, index|
+      line_description >> " #{index}. #{name}"
   end
 end
-
-
