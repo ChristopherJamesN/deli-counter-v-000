@@ -14,3 +14,7 @@ def line(deli)
     puts line_description
   end
 end
+
+def take_a_number(deli, name)
+  deli.push(name)
+end 
