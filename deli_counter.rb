@@ -9,7 +9,7 @@ def line(deli)
     puts "The line is currently: #{1}. #{deli[0]}"
   else
     deli.each_with_index do |name, index|
-      line_description << " #{index}. #{name}"
+      line_description << " #{index+1}. #{name}"
     end
     puts line_description
   end
