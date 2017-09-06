@@ -5,6 +5,6 @@ def line(deli)
   if deli==[]
     puts "There is nobody in line"
   else
-    puts deli 
+    puts deli
   end
 end
